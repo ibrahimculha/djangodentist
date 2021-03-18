@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Rezervasyon Bilgileriniz {% endblock  %}
+{% block meta_description %} Rezervasyon yap, randevu al | Designer İbrahim Çulha {% endblock %}
+{% block content  %}
+
+
+<!-- ***** Breadcrumb Area Start ***** -->
+  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'blog/img/bg-img/12.jpg' %});">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12">
+          <h2 class="title">Rezervasyon</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="breadcumb--con">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i> AnaSayfa</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Rezervasyon</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Breadcrumb Area End ***** -->
+
+<center>
+<h1>Rezervasyon bilgileriniz</h1>
+
+<strong>İsminiz: </strong>{{your_name}}<br/>
+<strong>Telefon: </strong>{{your_phone}}<br/>
+<strong>Email: </strong>{{your_email}}<br/>
+<strong>Adres: </strong>{{your_address}}<br/>
+<strong>Saat: </strong>{{your_schedule}}<br/>
+<strong>Ay: </strong>{{your_date}}<br/>
+<strong>Mesajınız: </strong>{{your_message}}<br/>
+</center>
+<br/><br/>
+
+<center>
+<strong> İCDesigner</strong><h1>Bizimle olduğunuz için teşekkür ederiz..</h1>
+</center>
+<br/><br/><br/><br/>
+{% endblock  %}
